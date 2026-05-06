@@ -1,8 +1,3 @@
-if (window.location.hostname === "www.amoka.ca") {
-  const targetUrl = `https://amoka.ca${window.location.pathname}${window.location.search}${window.location.hash}`;
-  window.location.replace(targetUrl);
-}
-
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelectorAll(".site-nav a");
 const year = document.querySelector("#year");
