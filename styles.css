@@ -66,9 +66,13 @@ a {
 
 .brand-logo {
   display: block;
-  width: 6rem;
-  height: 4rem;
-  object-fit: contain;
+  width: 6.8rem;
+  height: 6.8rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 2px solid rgba(2, 89, 79, 0.18);
+  box-shadow: 0 10px 28px rgba(2, 89, 79, 0.14);
 }
 
 .brand-mark {
@@ -524,8 +528,8 @@ h3 {
   }
 
   .brand-logo {
-    width: 4.8rem;
-    height: 3.2rem;
+    width: 5.4rem;
+    height: 5.4rem;
   }
 
   .hero-card {
