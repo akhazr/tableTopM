@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="AMOKA Coffee & Bites: handcrafted croissants, quality coffee, and a warm cafe-bistro atmosphere in British Columbia."
+    >
+    <title>AMOKA Coffee & Bites | Taste The Morning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="AMOKA Coffee & Bites home">
+        <img
+          class="brand-logo"
+          src="./logo-amoka.png"
+          alt="AMOKA Coffee & Bites logo"
+          onerror="this.style.display='none'; this.parentElement.classList.add('logo-fallback');"
+        >
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span class="brand-name">
+          AMOKA
+          <small>Coffee &amp; Bites</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#menu">Menu</a>
+        <a href="#about">Brand</a>
+        <a href="#visit">Visit</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Always fresh, always authentic</p>
+          <h1>Taste. Bite. Repeat.</h1>
+          <p>
+            AMOKA Coffee & Bites is a cafe-bistro built around handcrafted croissants,
+            quality coffee, and warm service. Every detail is made to feel fresh,
+            honest, and close to home.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#menu">View menu highlights</a>
+            <a class="button button-secondary" href="#visit">Plan your visit</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Featured values">
+          <p class="card-kicker">Brand promise</p>
+          <h2>Freshly baked happiness.</h2>
+          <p>Croissants baked daily, coffee prepared with care, no shortcuts.</p>
+          <span>Wake up your history.</span>
+        </div>
+      </section>
+
+      <section class="intro section" id="about">
+        <p class="eyebrow">Who we are</p>
+        <div class="split">
+          <h2>A handcrafted cafe experience in British Columbia.</h2>
+          <p>
+            At AMOKA we believe in products made by hand and served with warmth.
+            Our identity combines artisan quality, modern style, and a relaxed tone
+            to create a place people return to because it tastes good, smells good,
+            and feels good.
+          </p>
+        </div>
+      </section>
+
+      <section class="menu section" id="menu">
+        <div class="section-heading">
+          <p class="eyebrow">Menu highlights</p>
+          <h2>Small menu, made with care.</h2>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-item">
+            <span>Coffee</span>
+            <h3>Signature espresso</h3>
+            <p>Balanced extraction with chocolate notes and a clean finish.</p>
+          </article>
+          <article class="menu-item">
+            <span>Bakery</span>
+            <h3>Daily croissants</h3>
+            <p>Freshly baked every morning in small batches.</p>
+          </article>
+          <article class="menu-item">
+            <span>Bites</span>
+            <h3>Concha by piece</h3>
+            <p>Soft, sweet, and made to pair with your coffee ritual.</p>
+          </article>
+          <article class="menu-item">
+            <span>Seasonal</span>
+            <h3>House special latte</h3>
+            <p>Rotating flavor inspired by local ingredients and seasons.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="feature section">
+        <div class="feature-image" role="img" aria-label="Warm cafe interior illustration"></div>
+        <div class="feature-copy">
+          <p class="eyebrow">Brand DNA</p>
+          <h2>Artisanal. Warm. Modern. Reliable.</h2>
+          <p>
+            The visual language follows your identity manual: deep green as the
+            primary base, cream for clarity, and energetic accents for playful
+            moments across digital touchpoints.
+          </p>
+        </div>
+      </section>
+
+      <section class="visit section" id="visit">
+        <div>
+          <p class="eyebrow">Visit AMOKA</p>
+          <h2>Come by soon.</h2>
+          <p>
+            Update this section with your exact address and final hours before launch.
+            Everything is ready for GitHub Pages and your custom domain.
+          </p>
+        </div>
+        <div class="visit-card">
+          <dl>
+            <div>
+              <dt>Hours</dt>
+              <dd>Mon - Sun, 7:00 AM - 7:00 PM</dd>
+            </div>
+            <div>
+              <dt>Location</dt>
+              <dd>British Columbia, Canada</dd>
+            </div>
+            <div>
+              <dt>Domain</dt>
+              <dd>amoka.ca</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <p class="eyebrow">Stay connected</p>
+        <h2>Taste the morning with us.</h2>
+        <p>For events, collaborations, and opening updates, contact AMOKA directly.</p>
+        <a class="button button-primary" href="mailto:hello@amoka.ca">hello@amoka.ca</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> AMOKA Coffee &amp; Bites. All rights reserved.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
