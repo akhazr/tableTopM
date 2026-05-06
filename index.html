@@ -18,80 +18,89 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="AMOKA Coffee & Bites home">
-        <img
-          class="brand-logo"
-          src="./logo-amoka.png"
-          alt="AMOKA Coffee & Bites logo"
-          onerror="this.style.display='none'; this.parentElement.classList.add('logo-fallback');"
+      <div class="header-left">
+        <a class="brand" href="#top" aria-label="AMOKA Coffee & Bites home">
+          <img
+            class="brand-logo"
+            src="./logo-amoka.png"
+            alt="AMOKA Coffee & Bites logo"
+            onerror="this.style.display='none'; this.parentElement.classList.add('logo-fallback');"
+          >
+          <span class="brand-mark" aria-hidden="true">A</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a class="menu-link" href="./MenuAmoka_37.1x57_PRINT_FIN.pdf" target="_blank" rel="noreferrer">Menu</a>
+          <a href="#featured">Featured</a>
+          <a href="#visit">Visit</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="header-actions">
+        <a
+          class="button button-order"
+          href="https://order.online/store/-1649877/?pickup=true&hideModal=true&utm_source=gfo&rwg_token=AFd1xnEuLdV1BhprTAiKXkvRFJN7YW4y94tghBHfKcItxzS50B09iqx4FPSLqGFuNAH0LZiRME0Q1YKTU5CLuIjcIhXDr4P1aA%3D%3D"
+          target="_blank"
+          rel="noreferrer"
         >
-        <span class="brand-mark" aria-hidden="true">A</span>
-      </a>
+          Order now
+        </a>
+      </div>
       <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
         <span></span>
         <span></span>
       </button>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a class="order-link" href="https://order.online/store/-1649877/?pickup=true&hideModal=true&utm_source=gfo&rwg_token=AFd1xnEuLdV1BhprTAiKXkvRFJN7YW4y94tghBHfKcItxzS50B09iqx4FPSLqGFuNAH0LZiRME0Q1YKTU5CLuIjcIhXDr4P1aA%3D%3D" target="_blank" rel="noreferrer">Order Now</a>
-        <a href="#menu">Menu</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#about">Brand</a>
-        <a href="#visit">Visit</a>
-        <a href="#contact">Contact</a>
-      </nav>
     </header>
 
     <main id="top">
       <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Always fresh, always authentic</p>
-          <h1>Taste. Bite. Repeat.</h1>
-          <p>
-            AMOKA Coffee & Bites is a cafe-bistro built around handcrafted croissants,
-            quality coffee, and warm service.
-          </p>
+        <div class="hero-content">
+          <p class="eyebrow">AMOKA Coffee &amp; Bites</p>
+          <h1>Taste the morning.</h1>
+          <p>Handcrafted croissants, quality coffee, and warm service in Vancouver.</p>
           <div class="hero-actions">
+            <a class="button button-primary menu-link" href="./MenuAmoka_37.1x57_PRINT_FIN.pdf" target="_blank" rel="noreferrer">View menu</a>
+            <a class="button button-secondary" href="#visit">Find us</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo section" id="featured">
+        <article class="promo-card promo-green">
+          <img src="./Coffe Cup April-02.jpg" alt="Freshly brewed coffee at AMOKA">
+          <div class="promo-copy">
+            <h2>Fresh coffee. Baked daily.</h2>
+            <p>
+              Start your day with expertly brewed coffee and handcrafted bites made every morning.
+            </p>
             <a
-              class="button button-order"
+              class="button button-outline"
               href="https://order.online/store/-1649877/?pickup=true&hideModal=true&utm_source=gfo&rwg_token=AFd1xnEuLdV1BhprTAiKXkvRFJN7YW4y94tghBHfKcItxzS50B09iqx4FPSLqGFuNAH0LZiRME0Q1YKTU5CLuIjcIhXDr4P1aA%3D%3D"
               target="_blank"
               rel="noreferrer"
             >
-              Order now
+              Order pickup
             </a>
-            <a class="button button-primary" href="#menu">View menu highlights</a>
-            <a class="button button-secondary" href="#visit">Plan your visit</a>
           </div>
-        </div>
-        <div class="hero-card" aria-label="Featured values">
-          <p class="card-kicker">Brand promise</p>
-          <h2>Freshly baked happiness.</h2>
-          <p>Croissants baked daily, coffee prepared with care, no shortcuts.</p>
-          <span>Wake up your history.</span>
-        </div>
-      </section>
-
-      <section class="intro section" id="about">
-        <p class="eyebrow">Who we are</p>
-        <div class="split">
-          <h2>A handcrafted cafe experience in British Columbia.</h2>
-          <p>
-            At AMOKA we believe in products made by hand and served with warmth.
-            Our identity combines artisan quality, modern style, and a relaxed tone
-            to create a place people return to because it tastes good, smells good,
-            and feels good.
-          </p>
-        </div>
+        </article>
+        <article class="promo-card reverse promo-cream">
+          <img src="./logo-amoka.png" alt="AMOKA brand mark">
+          <div class="promo-copy">
+            <h2>Always fresh, always authentic.</h2>
+            <p>From espresso to croissants, everything is made with care and consistency.</p>
+            <a class="button button-outline" href="#visit">See hours &amp; location</a>
+          </div>
+        </article>
       </section>
 
       <section class="menu section" id="menu">
         <div class="section-heading">
           <p class="eyebrow">Menu highlights</p>
-          <h2>Small menu, made with care.</h2>
+          <h2>Your AMOKA favorites.</h2>
+          <a class="button button-outline menu-link" href="./MenuAmoka_37.1x57_PRINT_FIN.pdf" target="_blank" rel="noreferrer">Open full menu (PDF)</a>
         </div>
         <div class="menu-grid">
           <article class="menu-item">
-            <span>Coffee</span>
+            <span>Hot coffee</span>
             <h3>Signature espresso</h3>
             <p>Balanced extraction with chocolate notes and a clean finish.</p>
           </article>
@@ -113,35 +122,11 @@
         </div>
       </section>
 
-      <section class="gallery section" id="gallery">
-        <div class="section-heading">
-          <p class="eyebrow">Gallery</p>
-          <h2>Coffee and croissants, up close.</h2>
-        </div>
-        <div class="gallery-grid">
-          <figure class="gallery-card">
-            <img src="./Coffe Cup April-02.jpg" alt="Freshly brewed coffee at AMOKA">
-            <figcaption>Freshly brewed coffee</figcaption>
-          </figure>
-          <figure class="gallery-card gallery-card-logo">
-            <img
-              src="./logo-amoka.png"
-              alt="AMOKA croissant logo artwork"
-              loading="lazy"
-            >
-            <figcaption>Buttery baked croissant</figcaption>
-          </figure>
-        </div>
-      </section>
-
       <section class="visit section" id="visit">
-        <div>
+        <div class="visit-copy">
           <p class="eyebrow">Visit AMOKA</p>
           <h2>Come visit us.</h2>
-          <p>
-            Find us in the heart of Vancouver for fresh coffee, croissants, and bites
-            made daily.
-          </p>
+          <p>Find us in the heart of Vancouver for fresh coffee, croissants, and bites made daily.</p>
         </div>
         <div class="visit-card">
           <dl>
@@ -178,6 +163,17 @@
       </p>
       <a href="#top">Back to top</a>
     </footer>
+
+    <div class="menu-modal" id="menu-modal" aria-hidden="true" role="dialog" aria-label="AMOKA menu">
+      <div class="menu-modal-panel">
+        <button class="menu-modal-close" type="button" aria-label="Close menu PDF">&times;</button>
+        <iframe
+          class="menu-modal-frame"
+          src="./MenuAmoka_37.1x57_PRINT_FIN.pdf"
+          title="AMOKA Menu PDF"
+        ></iframe>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
