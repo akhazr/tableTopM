@@ -6,7 +6,7 @@ Static website for Amoka Cafe, ready to host for free on GitHub Pages.
 
 The site now expects your official logo at:
 
-- `logo-amoka.png` (in the project root)
+- `Logo.png` (in the project root)
 
 If the file is missing, the site uses a text fallback automatically.
 

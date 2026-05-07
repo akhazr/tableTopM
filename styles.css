@@ -131,18 +131,47 @@ a { color: inherit; text-decoration: none; }
 main { width: min(1200px, calc(100% - 2rem)); margin: 0 auto; }
 .section { padding: clamp(2.5rem, 5vw, 4.3rem) 0; }
 
-.hero {
-  margin-top: 1.3rem;
-  padding: clamp(2.4rem, 6vw, 4rem);
-  border-radius: 1.3rem;
-  background: linear-gradient(150deg, #04564d, #057062);
+.top-banner {
+  margin-top: 0.75rem;
+  padding: 0.85rem 1rem;
+  border-radius: 0.7rem;
+  background: linear-gradient(90deg, #1f3a27, #24472c);
   color: #fff;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.95rem;
+  flex-wrap: wrap;
 }
 
-.hero-content {
+.top-banner p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.02rem;
+}
+
+.top-banner .button-primary {
+  min-height: 2.2rem;
+  padding: 0.45rem 0.95rem;
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.86);
+  color: #fff;
+}
+
+.hero {
+  margin-top: 1rem;
+  padding: clamp(1.1rem, 2.4vw, 1.5rem);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: #efe5d2;
   display: grid;
-  justify-items: center;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 1.1rem;
+  align-items: center;
+}
+
+.hero-copy {
+  padding: clamp(0.4rem, 1.4vw, 0.85rem);
 }
 
 .eyebrow {
@@ -165,17 +194,46 @@ h1 { font-size: clamp(2.2rem, 5vw, 4rem); margin-bottom: 0.9rem; }
 h2 { font-size: clamp(1.7rem, 3.6vw, 2.8rem); margin-bottom: 0.9rem; }
 h3 { font-size: 1.35rem; margin-bottom: 0.5rem; }
 
-.hero p {
-  max-width: 46rem;
-  margin-inline: auto;
-  font-size: 1.05rem;
+.hero h1 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  color: #0e5d53;
+  text-wrap: balance;
 }
-.hero-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.25rem; justify-content: center; }
+
+.hero p {
+  margin: 0;
+  max-width: 34rem;
+  color: #29514b;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.05rem;
+}
+
+.hero .button-primary {
+  background: var(--green);
+  color: #fff;
+  border-color: var(--green);
+}
 
 .hero .button-secondary {
-  color: #fff;
-  border-color: rgba(255, 255, 255, 0.85);
-  background: rgba(255, 255, 255, 0.08);
+  color: var(--green);
+  border-color: rgba(2, 89, 79, 0.32);
+  background: #fff;
+}
+
+.hero-art img {
+  width: 100%;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(2, 89, 79, 0.2);
+  background: #e8dcc6;
+  object-fit: cover;
 }
 
 .promo { display: grid; gap: 1.1rem; }
@@ -203,8 +261,8 @@ h3 { font-size: 1.35rem; margin-bottom: 0.5rem; }
   padding: clamp(1.5rem, 3vw, 2.3rem);
   display: grid;
   align-content: center;
-  justify-items: center;
-  text-align: center;
+  justify-items: start;
+  text-align: left;
 }
 
 .promo-copy p { margin-bottom: 1.2rem; }
@@ -229,6 +287,22 @@ h3 { font-size: 1.35rem; margin-bottom: 0.5rem; }
 }
 
 .section-heading { max-width: 46rem; margin-bottom: 1.25rem; }
+
+.design-strip {
+  display: grid;
+  grid-template-columns: 1.45fr 1fr;
+  gap: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.design-strip img {
+  width: 100%;
+  height: 100%;
+  min-height: 10rem;
+  object-fit: cover;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(2, 89, 79, 0.14);
+}
 
 .menu-grid {
   display: grid;
@@ -357,6 +431,9 @@ h3 { font-size: 1.35rem; margin-bottom: 0.5rem; }
   .visit { grid-template-columns: 1fr; }
   .promo-card { grid-template-columns: 1fr; }
   .promo-card.reverse { direction: ltr; }
+  .hero { grid-template-columns: 1fr; }
+  .hero-copy { padding: 0.2rem; }
+  .design-strip { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 760px) {
@@ -378,6 +455,8 @@ h3 { font-size: 1.35rem; margin-bottom: 0.5rem; }
   }
   body.nav-open .site-nav { display: flex; }
   .brand-logo { width: 4.4rem; height: 4.4rem; }
+  .top-banner { justify-content: center; text-align: center; }
+  .hero-actions { width: 100%; }
 }
 
 @media (max-width: 560px) {
