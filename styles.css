@@ -135,7 +135,7 @@ main { width: min(1200px, calc(100% - 2rem)); margin: 0 auto; }
   margin-top: 0.75rem;
   padding: 0.85rem 1rem;
   border-radius: 0.7rem;
-  background: linear-gradient(90deg, #1f3a27, #24472c);
+  background: linear-gradient(90deg, #0b5f54, #0f6d61);
   color: #fff;
   display: flex;
   align-items: center;
@@ -148,6 +148,7 @@ main { width: min(1200px, calc(100% - 2rem)); margin: 0 auto; }
   margin: 0;
   font-weight: 700;
   font-size: 1.02rem;
+  color: #f6d9a6;
 }
 
 .top-banner .button-primary {
