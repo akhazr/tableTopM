@@ -324,7 +324,7 @@ h3 { font-size: 1.35rem; margin-bottom: 0.5rem; }
 
 .design-strip {
   display: grid;
-  grid-template-columns: 1.45fr 1fr;
+  grid-template-columns: 1fr;
   gap: 0.85rem;
   margin-bottom: 1rem;
 }
