@@ -1,6 +1,8 @@
 :root {
   --green: #02594f;
   --green-ink: #0f3c37;
+  --pink: #eaa6b6;
+  --pink-deep: #d97f95;
   --cream: #f6f2e4;
   --offwhite: #fbf9f3;
   --line: rgba(2, 89, 79, 0.18);
@@ -82,8 +84,8 @@ a { color: inherit; text-decoration: none; }
   width: 5.2rem;
   height: 5.2rem;
   border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid var(--line);
+  object-fit: contain;
+  clip-path: circle(50% at 50% 50%);
 }
 
 .brand-mark {
@@ -115,8 +117,8 @@ a { color: inherit; text-decoration: none; }
 }
 
 .site-nav a:hover {
-  color: var(--green);
-  border-bottom-color: var(--green);
+  color: var(--pink-deep);
+  border-bottom-color: var(--pink-deep);
 }
 
 .header-actions { display: flex; align-items: center; }
@@ -140,7 +142,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .button-primary { background: var(--green); color: #fff; }
-.button-secondary { background: transparent; color: var(--green); }
+.button-secondary { background: transparent; color: var(--pink-deep); border-color: rgba(217, 127, 149, 0.4); }
 .button-order { background: var(--green); color: #fff; }
 .button-outline { background: transparent; color: var(--green); }
 
@@ -214,6 +216,7 @@ main { width: min(1200px, calc(100% - 2rem)); margin: 0 auto; }
   letter-spacing: 0.13em;
   font-weight: 700;
   font-size: 0.76rem;
+  color: var(--pink-deep);
 }
 
 h1, h2, h3, p { margin-top: 0; }
@@ -257,9 +260,13 @@ h3 { font-size: 1.35rem; margin-bottom: 0.5rem; }
 }
 
 .hero .button-secondary {
-  color: var(--green);
-  border-color: rgba(2, 89, 79, 0.32);
+  color: var(--pink-deep);
+  border-color: rgba(217, 127, 149, 0.42);
   background: #fff;
+}
+
+.hero .button-secondary:hover {
+  background: rgba(234, 166, 182, 0.16);
 }
 
 .hero-art img {
@@ -355,7 +362,7 @@ h3 { font-size: 1.35rem; margin-bottom: 0.5rem; }
 .menu-item span {
   display: inline-block;
   margin-bottom: 0.35rem;
-  color: #e5453c;
+  color: var(--pink-deep);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.72rem;
@@ -413,6 +420,7 @@ h3 { font-size: 1.35rem; margin-bottom: 0.5rem; }
 
 .site-footer p { margin: 0; }
 .site-footer a { font-weight: 700; }
+.site-footer a:hover { color: var(--pink-deep); }
 
 .menu-page {
   width: min(1100px, calc(100% - 2rem));
