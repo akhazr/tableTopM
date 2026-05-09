@@ -121,7 +121,13 @@ a { color: inherit; text-decoration: none; }
   border-bottom-color: var(--pink-deep);
 }
 
-.header-actions { display: flex; align-items: center; }
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
 
 .button {
   display: inline-flex;
@@ -143,7 +149,8 @@ a { color: inherit; text-decoration: none; }
 
 .button-primary { background: var(--green); color: #fff; }
 .button-secondary { background: transparent; color: var(--pink-deep); border-color: rgba(217, 127, 149, 0.4); }
-.button-order { background: var(--green); color: #fff; }
+.button-pickup { background: var(--green); color: #fff; border-color: var(--green); }
+.button-delivery { background: #fff; color: var(--green); border-color: rgba(2, 89, 79, 0.35); }
 .button-outline { background: transparent; color: var(--green); }
 
 .nav-toggle {
@@ -179,6 +186,13 @@ main { width: min(1200px, calc(100% - 2rem)); margin: 0 auto; }
   flex-wrap: wrap;
 }
 
+.order-links {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .top-banner p {
   margin: 0;
   font-weight: 700;
@@ -186,12 +200,21 @@ main { width: min(1200px, calc(100% - 2rem)); margin: 0 auto; }
   color: #f6d9a6;
 }
 
-.top-banner .button-primary {
+.top-banner .button {
   min-height: 2.2rem;
   padding: 0.45rem 0.95rem;
   background: transparent;
   border-color: rgba(255, 255, 255, 0.86);
   color: #fff;
+}
+
+.top-banner .button-banner-pickup {
+  border-color: #fff;
+}
+
+.top-banner .button-banner-delivery {
+  border-color: rgba(255, 255, 255, 0.75);
+  color: #f6d9a6;
 }
 
 .hero {
@@ -269,6 +292,10 @@ h3 { font-size: 1.35rem; margin-bottom: 0.5rem; }
   background: rgba(234, 166, 182, 0.16);
 }
 
+.hero .button-delivery {
+  background: #fff;
+}
+
 .hero-art img {
   width: 100%;
   border-radius: 0.8rem;
@@ -321,6 +348,15 @@ h3 { font-size: 1.35rem; margin-bottom: 0.5rem; }
 
 .promo-green .button-outline:hover {
   background: rgba(255, 255, 255, 0.1);
+}
+
+.promo-green .button-pickup-light {
+  border-color: #f6d9a6;
+  color: #f6d9a6;
+}
+
+.promo-green .button-pickup-light:hover {
+  background: rgba(246, 217, 166, 0.14);
 }
 
 .promo-cream {
@@ -402,6 +438,48 @@ h3 { font-size: 1.35rem; margin-bottom: 0.5rem; }
 .visit-card dt { font-weight: 700; }
 .visit-card dd { text-align: right; }
 
+.local-seo {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.local-seo-copy,
+.faq-card {
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 1rem;
+  padding: 1.3rem;
+}
+
+.local-seo-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.faq-card h3 {
+  margin-bottom: 0.95rem;
+}
+
+.faq-card dl,
+.faq-card dd {
+  margin: 0;
+}
+
+.faq-card div {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.faq-card div:last-child {
+  border-bottom: 0;
+}
+
+.faq-card dt {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
 .contact {
   text-align: center;
   max-width: 45rem;
@@ -453,6 +531,7 @@ h3 { font-size: 1.35rem; margin-bottom: 0.5rem; }
   }
   .menu-grid { grid-template-columns: repeat(2, 1fr); }
   .visit { grid-template-columns: 1fr; }
+  .local-seo { grid-template-columns: 1fr; }
   .promo-card { grid-template-columns: 1fr; }
   .promo-card.reverse { direction: ltr; }
   .hero { grid-template-columns: 1fr; }
